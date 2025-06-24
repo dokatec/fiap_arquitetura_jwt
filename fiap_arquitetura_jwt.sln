@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fiap_arquitetura_jwt", "fiap_arquitetura_jwt.csproj", "{824B08C5-FF31-4FCB-91C1-1B01595C46BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{824B08C5-FF31-4FCB-91C1-1B01595C46BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824B08C5-FF31-4FCB-91C1-1B01595C46BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824B08C5-FF31-4FCB-91C1-1B01595C46BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824B08C5-FF31-4FCB-91C1-1B01595C46BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDCF2506-8818-43EB-9265-717491F64E1A}
+	EndGlobalSection
+EndGlobal
