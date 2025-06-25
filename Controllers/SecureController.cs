@@ -1,27 +1,27 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace fiap_arquitetura_jwt.Controllers
+namespace fiap_arquitetura_jwt.Controllers;
+
+
+[Route("api/[controller]")]
+[ApiController]
+public class SecureController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class SecureController : ControllerBase
+    [HttpGet("admin")]
+    [Authorize(Roles = "Admin")]
+    public IActionResult AdminOnly()
     {
-        [Authorize(Policy = "Admin")]
-        [HttpGet("admin")]
-        public IActionResult GetAdminOnly()
-        {
-            return Ok("Acesso permitido para ADMIN");
-        }
-
-        [Authorize(Policy = "Usuario")]
-        [HttpGet("usuario")]
-        public IActionResult GetUsuarioOnly()
-        {
-            return Ok("Acesso permitido para USUÁRIO");
-
-        }         
-
+        return Ok("Acesso permitido para ADMIN");
     }
+
+  
+    [HttpGet("user")]
+    [Authorize]
+    public IActionResult AnyUser()
+    {
+        return Ok("Acesso permitido para USUÁRIO");
+
+    }         
+
 }
